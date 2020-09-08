@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    
+@keyframes blink {
+    0% {opacity: 1;}
+    75% {opacity: 1;}
+    76% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+body{
+    color:rgb(27, 32, 105);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    
+}
+
+li{
+    font-size: 23px;
+}
+
+.far {
+    color:red;
+}
+
+.container{
+    margin-top:20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.kontakty{
+    margin-top:150px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.location{
+    color:rgb(78, 33, 11);
+    font-family: 'Bebas Neue', cursive;
+    height:45px;
+
+    
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-name: blink;
+        
+    
+}
+
