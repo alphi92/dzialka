@@ -1,43 +1,53 @@
 import React, { Component} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import emailjs from 'emailjs-com'
-import apiKeys from './apikeys'
+import emailjs from 'emailjs-com';
+
 
 
 class kontakt extends Component{
 
-  sendEmail = e => {
-    e.preventDefault()
+  sendEmail = (e) => {
+    e.preventDefault();
 
-    emailjs
-    .sendForm('service_ywfcu7d', apiKeys.template_44jj21v, e.target, apiKeys.user_IeTzbnLxYXhXc9PN7C3uC)
-    .then(
-      result => {
-        console.log(result.text)
-      },
-      error => {
-        console.log(error.text)
-      }
-    )
-    }
+emailjs.sendForm('service_ywfcu7d', 'template_hturepp', e.target, 'user_IeTzbnLxYXhXc9PN7C3uC')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+    e.target.reset()
+}
 
-    
     
 
       render() {
-        const form = document.querySelector('.form');
-        if (form) {
-          form.addEventListener('submit',this.sendEmail);
-        }
+        
         
 
         return(
-          <form class="form">
-            <input name='name' type="text" placeholder="Your name..." class="form__input" />
-            <input name='topic' type="text" placeholder="Topic..." class="form__input"  />
-            <textarea name='message' type="text" placeholder="Your Message..." class="form__input"  ></textarea>
-            <input type="submit" value="send" class="form__input form__input--button"/>
-          </form>
+          <div>
+            <div className="container">
+            <form onSubmit={this.sendEmail}>
+                    <div className="row pt-5 mx-auto">
+                        <div className="col-8 form-group mx-auto">
+                            <input type="text" className="form-control" placeholder="Name" name="from_name"/>
+                        </div>
+                        <div className="col-8 form-group pt-2 mx-auto">
+                            <input type="email" className="form-control" placeholder="Email Address" name="from_email"/>
+                        </div>
+                        <div className="col-8 form-group pt-2 mx-auto">
+                            <input type="text" className="form-control" placeholder="Number" name="from_number"/>
+                        </div>
+                        <div className="col-8 form-group pt-2 mx-auto">
+                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
+                        </div>
+                        <div className="col-8 pt-3 mx-auto">
+                            <input type="submit" className="btn btn-info" value="Send Message"></input>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
         );
         
        }
