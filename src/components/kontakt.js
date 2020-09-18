@@ -30,7 +30,6 @@ emailjs.sendForm('service_ywfcu7d', 'template_hturepp', e.target, 'user_IeTzbnLx
             
             <form onSubmit={this.sendEmail}>
                     <div className="row pt-5 mx-auto">
-                        <div className="numerKontaktowy"><button>Pokaż numer telefonu.</button></div>
                         <h2>Wyślij zapytanie.</h2>
                         <div className="col-8 form-group mx-auto">
                             <input type="text" className="form-control" placeholder="Imię" name="from_name"/>

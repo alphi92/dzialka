@@ -41,9 +41,9 @@ class home extends Component{
 
                     </p>
                     
-                    
-                    </div>
                     <div className="price">Cena: 199 999 zł</div>
+                    </div>
+                    
 
                 </div>
             </div>
