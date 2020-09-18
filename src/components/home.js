@@ -34,11 +34,6 @@ class home extends Component{
                         <li>Szkoła podstawowa - <span className="far">1km</span></li>
 
                     </ul>
-                    
-                    
-
-                    
-
                     </p>
                     
                     <div className="price">Cena: 199 999 zł</div>
