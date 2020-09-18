@@ -27,22 +27,25 @@ emailjs.sendForm('service_ywfcu7d', 'template_hturepp', e.target, 'user_IeTzbnLx
         return(
           <div>
             <div className="container">
+            
             <form onSubmit={this.sendEmail}>
                     <div className="row pt-5 mx-auto">
+                        <div className="numerKontaktowy"><button>Pokaż numer telefonu.</button></div>
+                        <h2>Wyślij zapytanie.</h2>
                         <div className="col-8 form-group mx-auto">
-                            <input type="text" className="form-control" placeholder="Name" name="from_name"/>
+                            <input type="text" className="form-control" placeholder="Imię" name="from_name"/>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="email" className="form-control" placeholder="Email Address" name="from_email"/>
+                            <input type="email" className="form-control" placeholder="Email" name="from_email"/>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="text" className="form-control" placeholder="Number" name="from_number"/>
+                            <input type="text" className="form-control" placeholder="Numer kontaktowy" name="from_number"/>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
+                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Twoja wiadomość" name="message"></textarea>
                         </div>
                         <div className="col-8 pt-3 mx-auto">
-                            <input type="submit" className="btn btn-info" value="Send Message"></input>
+                            <input type="submit" className="btn btn-info" value="Wyślij!"></input>
                         </div>
                     </div>
                 </form>

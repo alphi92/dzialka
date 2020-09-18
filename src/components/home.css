@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
 
     
 @keyframes blink {
@@ -38,12 +39,20 @@ li{
     color:rgb(78, 33, 11);
     font-family: 'Bebas Neue', cursive;
     height:45px;
-
-    
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-        animation-name: blink;
-        
-    
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blink;
+    margin:auto;
 }
 
+.price{
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  padding: 20px;
+  font-family: 'Ranchers', cursive;
+  color:rgb(219, 28, 28);
+  font-size:30px;
+}

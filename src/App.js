@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import kontakt from "./components/kontakt"
 import galeria from "./components/galeria"
 import home from "./components/home"
+import mapa from "./components/mapa"
 
 class App extends Component{
 
@@ -16,6 +17,7 @@ class App extends Component{
             <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
             <Link to="/home">Home</Link>
             <Link to="/galeria">Galeria</Link>
+            <Link to="/mapa">Mapa</Link>
             <Link to="/kontakt">Kontakt</Link>
             </nav>
           </header>
@@ -23,6 +25,7 @@ class App extends Component{
               <Route exact path="/" component={home} />
               <Route path="/home" component={home} />
               <Route path="/kontakt" component={kontakt} />
+              <Route path="/mapa" component={mapa} />
               <Route path="/galeria" component={galeria} />
             </Switch>
         </BrowserRouter>

@@ -23,26 +23,27 @@ class home extends Component{
                         <li>Przystanek linii 16 - <span className="far">800m</span></li>
                         <li>Ośrodek gminny - <span className="far">700m</span> : 
                             <ul> 
-                                <li>przedszkole</li> 
+                                <li>przedszkole</li>
                                 <li>żłobek</li> 
                                 <li>przychodnia</li> 
                                 <li>dentysta</li>
                                 <li>lokale gastronomiczne</li>
-                                <li>sklep Stokrotka</li>
+                                <li>sklep Stokrotka oraz Groszek</li>
                             </ul>
                         </li>
                         <li>Szkoła podstawowa - <span className="far">1km</span></li>
 
                     </ul>
-                    <a href="https://glusk.e-mapa.net/?object=sys.dzialka.060905_2.0017.176/1" className="location">GEOLOKALIZACJA</a>
+                    
                     
 
-
+                    
 
                     </p>
                     
                     
                     </div>
+                    <div className="price">Cena: 199 999 zł</div>
 
                 </div>
             </div>
