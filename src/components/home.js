@@ -32,11 +32,12 @@ class home extends Component{
                             </ul>
                         </li>
                         <li>Szkoła podstawowa - <span className="far">1km</span></li>
+                        <li>Plac zabaw, workout na świeżym powietrzu, miejsce na grilla, boisko do siatkówki - <span className="far">50m</span></li>
 
                     </ul>
                     </p>
                     
-                    <div className="price">Cena: 199 999 zł</div>
+                    <div className="price">Cena: 250 000 zł</div>
                     </div>
                     
 
